@@ -1,9 +1,143 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Danyelle Dell'Olio</title>
+    <title>Danyelle Dell'Olio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/style.css" rel="stylesheet">
+    <style type="text/css">
+    body {
+        width: 100%;
+    }
+    
+    .nav {
+        border-width: 2px;
+        /*border-bottom: dotted;*/
+        /*position: fixed;*/
+        background-color: white;
+        padding: 10px;
+    }
+    
+    .logo {
+        border-width: 2px;
+        border-bottom: dotted;
+        border-top: dotted;
+        margin: 10px;
+    }
+    
+    .content {
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        height: 100%;
+        background-color: white;
+    }
+    
+    .context {
+        border-width: 5px;
+        border-right: double;
+        padding: 10px;
+        padding-right: 0;
+        padding-top: 0;
+    }
+    
+    .sidebar {
+        padding: 10px;
+    }
+    
+    .foot {
+        color: white;
+        background-color: black;
+        padding: 10px;
+    }
+    /*index.html css*/
+    
+    .postTitle {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 10px;
+        padding-right: 0;
+    }
+    
+    .postContent {
+        padding: 5px;
+    }
+    
+    .postLinks {
+              border-width: 2px;
+
+        border-top: double;
+        border-bottom: double;
+        padding: 10px;
+        padding-right: 0;
+    }
+    </style>
 </head>
+
 <body>
-index
+    <div class="container">
+        <div class="col-md-10 col-md-offset-1 content">
+            <!-- header static -->
+            <div class="nav text-center">
+                <a href="/">HOME</a>
+                <a href="/about">ABOUT</a>
+                <a href="/contact">CONTACT</a>
+                <form style="display:inline;" class="text-center">
+                    <input type="search" name="search" value="SEARCH" class="text-center">
+                </form>
+            </div>
+            <div class="logo text-center">
+                <h1>DANYELLE DELL'OLIO</h1>
+            </div>
+            <!-- context area -->
+            <div class="col-md-9">
+                <div class="context">
+                    <!-- blog post -->
+                    <div class="post">
+                        <div class="postTitle">
+                            <h4> example blog post</h4>
+                            <h5>date</h5>
+                        </div>
+                        <div class="postContent">
+                            <p>
+                                Chillwave 3 wolf moon keffiyeh, distillery authentic venmo godard lo-fi truffaut. Echo park mlkshk cray gentrify blog forage brunch ethical, polaroid disrupt readymade. Offal chicharrones lumbersexual pinterest raw denim marfa. Dreamcatcher drinking vinegar helvetica, fashion axe pop-up yuccie wayfarers. Sartorial fanny pack thundercats meditation, disrupt kombucha cliche whatever paleo butcher literally green juice sustainable. Retro small batch hashtag knausgaard chartreuse. YOLO seitan XOXO cronut, retro paleo franzen flannel +1 umami green juice 3 wolf moon chartreuse.
+                            </p>
+                        </div>
+                        <div class="postLinks">
+                            social media links || comments
+                        </div>
+                    </div>
+                    <!-- end post -->
+                    <br>
+                    <br>
+                    <!-- blog post -->
+                    <div class="post">
+                        <div class="postTitle">
+                            <h4> example blog post 2</h4>
+                            <h5>date</h5>
+                        </div>
+                        <div class="postContent">
+                            <p>
+                                Slow-carb keffiyeh chillwave banh mi pork belly vice. Selfies tofu roof party, freegan beard fap synth iPhone crucifix knausgaard skateboard hoodie craft beer artisan plaid. Chia mixtape craft beer kinfolk, meggings direct trade pop-up. Cold-pressed squid +1 master cleanse street art. Food truck echo park messenger bag biodiesel, flexitarian VHS YOLO polaroid squid. Tofu biodiesel asymmetrical, pitchfork quinoa fingerstache listicle chartreuse ethical semiotics tilde neutra occupy food truck migas. Sartorial authentic microdosing shoreditch austin pork belly street art church-key kombucha cray.
+                            </p>
+                        </div>
+                        <div class="postLinks">
+                            social media links || comments
+                        </div>
+                    </div>
+                    <!-- end post -->
+                </div>
+            </div>
+            <!-- sidebar -->
+            <div class="col-md-3 sidebar">
+                links
+            </div>
+            <div class="row">
+                <div class="col-md-12 foot text-center">
+                    footer
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
