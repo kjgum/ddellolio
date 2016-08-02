@@ -53,7 +53,6 @@
         background-color: black;
         padding: 10px;
     }
-
     /*index.html css*/
     
     .postTitle {
@@ -74,7 +73,6 @@
         padding: 10px;
         padding-right: 10;
     }
-
     
     a {
         color: #007277;
@@ -90,7 +88,6 @@
         border-bottom: dotted;
     }
     
-    
     .sidebar {
         padding: 0;
         margin: 0;
@@ -99,24 +96,32 @@
     .foot a {
         color: white;
     }
-
+    
     .foot {
-      padding: 20px;
+        padding: 20px;
     }
     
     .logo {
         border-bottom: none;
     }
-
+    
     .date {
-      color: #007277;
+        color: #007277;
+    }
+    
+@media only screen and (max-width: 500px) {      
+  .content {
+        border: none;
+        width: 100%;
+        font-size: 16px;
+      }
     }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="col-md-10 col-md-offset-1 content col-sm-12">
+        <div class="col-md-10 col-md-offset-1 content">
             <!-- header static -->
             <div class="nav text-center">
                 &middot; <a href="/">HOME</a> &middot;
@@ -127,7 +132,7 @@
                 <img src="/nowbeerthis.png" width="100%">
             </div>
             <!-- context area -->
-            <div class="col-md-9 col-sm-12">
+            <div class="col-md-9">
                 <div class="context">
                     <!-- blog post -->
                     <div class="post">
@@ -136,10 +141,9 @@
                             <h5 class="date">1 August 2016</h5>
                         </div>
                         <div class="postContent">
-                        <img src="http://craftbeerandkitchen.com/wp-content/uploads/2015/02/craft-beers.jpg" width="100%">
-                        
-                        <br>
-                        <br>
+                            <img src="http://craftbeerandkitchen.com/wp-content/uploads/2015/02/craft-beers.jpg" width="100%">
+                            <br>
+                            <br>
                             <p>
                                 Chillwave 3 wolf moon keffiyeh, distillery authentic venmo godard lo-fi truffaut. Echo park mlkshk cray gentrify blog forage brunch ethical, polaroid disrupt readymade. Offal chicharrones lumbersexual pinterest raw denim marfa. Dreamcatcher drinking vinegar helvetica, fashion axe pop-up yuccie wayfarers. Sartorial fanny pack thundercats meditation, disrupt kombucha cliche whatever paleo butcher literally green juice sustainable. Retro mdall batch hashtag knausgaard chartreuse. YOLO seitan XOXO cronut, retro paleo franzen flannel +1 umami green juice 3 wolf moon chartreuse.
                             </p>
@@ -159,22 +163,21 @@
                         </div>
                         <div class="postContent">
                             <div class="row">
-                                <div class="col-md-5 col-sm-12">
+                                <div class="col-md-5">
                                     <img src="https://static1.squarespace.com/static/54f0bdbde4b0ece1cc34c1b7/55cb552fe4b0f13e0bff4cac/55cb553ee4b00770571b7b9e/1442193928676/11698555_931088726942288_4770003518668221760_n.jpg" width="100%">
                                 </div>
-                                <div class="col-md-7 col-sm-12">
+                                <div class="col-md-7">
                                     Slow-carb keffiyeh chillwave banh mi pork belly vice. Selfies tofu roof party, freegan beard fap synth iPhone crucifix knausgaard skateboard hoodie craft beer artisan plaid. Chia mixtape craft beer kinfolk, meggings direct trade pop-up. Cold-pressed squid +1 master cleanse street art. Food truck echo park messenger bag biodiesel, flexitarian VHS YOLO polaroid squid. Tofu biodiesel asymmetrical, pitchfork quinoa fingerstache listicle chartreuse ethical semiotics tilde neutra occupy food truck migas. Sartorial authentic microdosing shoreditch austin pork belly street art church-key kombucha cray.
                                 </div>
                             </div>
                             <br>
                             <div class="row">
-                            <div class="col-md-7 col-sm-12">
+                                <div class="col-md-7">
                                     Chicharrones art party tilde bicycle rights mustache authentic man braid 3 wolf moon freegan, brooklyn wayfarers church-key. Bushwick tilde flannel, brunch taxidermy lumbersexual polaroid locavore forage messenger bag. Keffiyeh fingerstache art party plaid kitsch craft beer. Microdosing bicycle rights authentic, distillery lo-fi master cleanse pork belly raw denim keffiyeh chartreuse portland neutra cred. Godard man bun normcore hammock skateboard XOXO whatever. Deep v biodiesel pickled ethical, flexitarian beard franzen gastropub mdall batch godard neutra cred keffiyeh pabst fap. Pop-up viral PBR&B aesthetic authentic lumbersexual organic, tousled everyday carry normcore four dollar toast disrupt schlitz sustainable.
                                 </div>
-                                <div class="col-md-5 col-sm-12">
+                                <div class="col-md-5">
                                     <img src="http://www.weyerbacher.com/wp-content/uploads/2014/02/weyerbacher-pint.jpg" width="100%">
                                 </div>
-                                
                             </div>
                         </div>
                         <div class="postLinks text-right">
@@ -206,11 +209,12 @@
                         <div class="col-md-12 text-center">
                             <img src="danyelle.png" width="100%">
                             <h3>danyelle dell'olio</h3>
-
-                                            <form style="display:inline;" class="text-center">
-                    <input type="search" name="search" value="SEARCH" class="text-center">
-                </form> 
-                <br><br><br>
+                            <form style="display:inline;" class="text-center">
+                                <input type="search" name="search" value="SEARCH" class="text-center">
+                            </form>
+                            <br>
+                            <br>
+                            <br>
                         </div>
                     </div>
                 </div>
