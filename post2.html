@@ -24,15 +24,23 @@
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <div id="fb-root"></div>
     <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '1641256042856620',
+            xfbml: true,
+            version: 'v2.7'
+        });
+    };
+
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
+        if (d.getElementById(id)) {
+            return;
+        }
         js = d.createElement(s);
         js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+        js.src = "//connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
@@ -154,20 +162,12 @@
                                 </div>
                             </div>
                             <div class="postLinks text-right">
-                                <span class="fb-share-button" data-href="http://ddellolio.herokuapp.com/american_punch" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fddellolio.herokuapp.com%2Famerican_punch&amp;src=sdkpreparse"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png" height="20px"></a>
+              <!--                   <span class="fb-share-button" data-href="http://ddellolio.herokuapp.com/american_punch" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fddellolio.herokuapp.com%2Famerican_punch&amp;src=sdkpreparse"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png" height="20px"></a>
                             </span>
                                 <a href="https://twitter.com/home?status=http%3A//ddellolio.herokuapp.com/american_punch"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png" height="20px">
-                                </a>
-                                <!-- 
-<script src="//www.powr.io/powr.js" external-type="html"></script> 
- <style type="text/css"> .powrMarkText{display:none;}</style><div class="powr-comments" id="e9dd3ba7_1470162838"></div> -->
-                                <!-- begin wwww.htmlcommentbox.com -->
-                                <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
-                                <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-
-                                <!-- end www.htmlcommentbox.com -->
-                                <!-- social media links || comments-->
-                                <div class="fb-comment-comment" data-href="{your-comment-url}" data-width="500"></div>
+                                </a> -->
+                                <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+                                </div>
                             </div>
                             <br>
                         </div>
