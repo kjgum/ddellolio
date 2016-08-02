@@ -160,13 +160,15 @@
 <body>
   
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+<div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs =  d.getElementsByTagName(s)[0];
+  if  (d.getElementById(id)) return;
+  js =  d.createElement(s); js.id = id;
+  js.src =  "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+  }(document, 'script', 'facebook-jssdk'));</script>
+
 
     <div class="container">
         <div class="col-md-10 col-md-offset-1 content">
@@ -291,7 +293,8 @@
                             <a href="https://twitter.com/home?status=http%3A//ddellolio.herokuapp.com/american_punch"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png" height="20px">
                             </a>
 
-<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fddellolio.herokuapp.com%2Famerican_punch&layout=button&size=small&mobile_iframe=true&width=59&height=20&appId" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+<div class="fb-comments"  data-href="http://ddellolio.herokuapp.com/american_punch" data-width="740" data-numposts="5"></div>
                                 <!-- social media links || comments-->
                                 <!-- <div class="fb-comment-comment" data-href="{your-comment-url}" data-width="500"></div> -->
                             </div>
