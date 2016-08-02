@@ -12,7 +12,7 @@
     
     .logo {
         border-width: 2px;
-        border-bottom: dotted;
+        /*border-bottom: dotted;*/
         border-top: dotted;
         margin: 10px;
     }
@@ -45,8 +45,8 @@
     
     .postTitle {
         border-top: 1px solid black;
-/*        border-bottom: 1px solid black;
-*/        padding: 10px;
+        border-bottom: 1px solid black;
+        padding: 10px;
         padding-right: 0;
     }
     
