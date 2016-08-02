@@ -3,20 +3,237 @@
 
 <head>
     <title>Danyelle Dell'Olio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="blog">
+    <meta name="author" content="Kristin Gumbert">
+    <meta name="keywords" content="beer blog">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" type="text/css" href="/public/style.css"> -->
+    <style type="text/css">
+    body {
+        width: 100%;
+        font-family: 'Antic', sans-serif;
+    }
+    
+    .nav {
+        border-width: 2px;
+        /*border-bottom: dotted;*/
+        /*position: fixed;*/
+        background-color: white;
+        padding: 10px;
+    }
+    
+    .nav a {
+        color: black;
+    }
+    
+    .logo {
+        border-width: 2px;
+        /*border-bottom: dotted;*/
+        border-top: dotted;
+        border-color: #007277;
+        margin: 10px;
+    }
+    
+    .content {
+        border-right: 3px solid black;
+        border-left: 3px solid black;
+        height: 100%;
+        background-color: white;
+    }
+    
+    .context {
+        border-width: 5px;
+        border-right: double;
+        padding: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+    
+    .sidebar {
+        padding: 0px;
+    }
+    
+    .foot {
+        color: white;
+        background-color: black;
+        padding: 10px;
+    }
+    /*index.html css*/
+    
+    .postTitle {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 10px;
+        padding-right: 0;
+    }
+    
+    .postContent {
+        padding: 5px;
+    }
+    
+    .postLinks {
+        border-width: 2px;
+        border-top: double;
+        border-bottom: double;
+        padding: 10px;
+        padding-right: 10;
+    }
+    
+    a {
+        /*color: #007277;*/
+        color: black;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        /*color: #198084;*/
+        color: black;
+    }
+    
+    .socialLinks {
+        margin: 0;
+        border-bottom: dotted;
+        border-color: #007277;
+    }
+    
+    .sidebar {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .foot a {
+        color: white;
+    }
+    
+    .foot {
+        padding: 20px;
+    }
+    
+    .logo {
+        border-bottom: none;
+    }
+    
+    .date {
+        color: #007277;
+    }
+    
+    hr.divider {
+        border-top: dotted;
+        color: #007277;
+    }
+    
+    @media(max-width:767px) {
+        .col-md-10 {
+            width: 100%;
+        }
+        .content {
+            border: none;
+            width: 100%;
+            font-size: 16px;
+        }
+        .context {
+            border: none;
+            width: 100%;
+ 
+        }
+        .logo {
+            width: 100%;
+        }
+        .socialLinks {
+            padding-top: 15px;
+        }
+    }
+    </style>
 </head>
 
 <body>
-ABOUT
-<a href="/">home</a>
-<a href="/contact">contact</a>
+    <div class="container">
+        <div class="col-md-10 col-md-offset-1 content">
+            <!-- header static -->
 
+            <div class="nav text-center"><h5>
+                &middot; <a href="/"> H O M E </a> &middot;
+                <a href="/about"> A B O U T </a> &middot;
+                <a href="/contact"> C O N T A C T </a> &middot;</h5>
+            </div>
+            <div class="logo text-center">
+                <img src="/nowbeerthis.png" width="100%">
+            </div>
+            <!-- context area -->
+            <div class="col-md-9">
+                <div class="context">
+                     <div class="postTitle">
+                        <h3> A B O U T   M E </h3>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar -->
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <div class="row socialLinks text-center">
+                        <div class="col-md-12 text-center">
+                            <!--                             <h2> 
+                        <a href="#" target="_blank" style="color:#3b5998">
+                        <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" style="color:#3b5998">
+                        <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" style="color:#e5e500">
+                        <i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" style="color:#019FE9">
+                        <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </h2> -->
+                            <a href="#" target="_blank">
+                                <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png" width="20%">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png" width="20%">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png" width="20%">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_snapchat-128.png" width="20%">
+                            </a>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <img src="danyelle.png" width="100%">
+                            <p>Hi! I'm Danyelle Dell'olio</p>
+<!--                             <form style="display:inline;" class="text-center">
+                                <input type="search" name="search" value="SEARCH" class="text-center">
+                            </form> -->
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 foot text-right">
+                    <a href="/">H O M E </a><br>
+                    <a href="/about">A B O U T </a><br>
+                    <a href="/contact">C O N T A C T </a>
 
-
-
-
-
+                    <br>
+                    <br>
+                    <br>
+ 
+                    <h6 style="font-size:10px;">created by <a href="https://www.kristingumbert.com">Kristin J.  Gumbert</a></h6>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
