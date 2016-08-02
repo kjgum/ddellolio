@@ -1,0 +1,69 @@
+    body {
+        width: 100%;
+    }
+    
+    .nav {
+        border-width: 2px;
+        /*border-bottom: dotted;*/
+        /*position: fixed;*/
+        background-color: white;
+        padding: 10px;
+    }
+    
+    .logo {
+        border-width: 2px;
+        border-bottom: dotted;
+        border-top: dotted;
+        margin: 10px;
+    }
+    
+    .content {
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        height: 100%;
+        background-color: white;
+    }
+    
+    .context {
+        border-width: 5px;
+        border-right: double;
+        padding: 10px;
+        padding-right: 0;
+        padding-top: 0;
+    }
+    
+    .sidebar {
+        padding: 10px;
+    }
+    
+    .foot {
+        color: white;
+        background-color: black;
+        padding: 10px;
+    }
+    /*index.html css*/
+    
+    .postTitle {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 10px;
+        padding-right: 0;
+    }
+    
+    .postContent {
+        padding: 5px;
+        color: red;
+    }
+    
+    .postLinks {
+        border-width: 2px;
+        border-top: double;
+        border-bottom: double;
+        padding: 10px;
+        padding-right: 10;
+    }
+
+    .socialLinks {
+        background-color: black;
+        color: white;
+    }
