@@ -36,6 +36,9 @@ app.get('/contact', function(req, res){
 app.get('/margaritas_on_my_mind', function(req, res){
   res.sendFile(path.join(__dirname, 'post1.html'));
 })
+app.get('/american_punch', function(req, res){
+  res.sendFile(path.join(__dirname, 'post2.html'));
+})
 
 // Starts the server to begin listening 
 // =============================================================
