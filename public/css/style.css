@@ -33,7 +33,7 @@
     }
     
     .sidebar {
-        padding: 10px;
+        padding: 0px;
     }
     
     .foot {
@@ -52,7 +52,6 @@
     
     .postContent {
         padding: 5px;
-        color: red;
     }
     
     .postLinks {
@@ -63,7 +62,3 @@
         padding-right: 10;
     }
 
-    .socialLinks {
-        background-color: black;
-        color: white;
-    }
