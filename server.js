@@ -68,6 +68,7 @@
 // =============================================================
 var express = require('express');
 var bodyParser = require('body-parser');
+var nodemailer = require("nodemailer");
 var path = require('path');
 
 // Sets up the Express App
@@ -77,9 +78,9 @@ var PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
-app.use(bodyParser.json({type:'application/vnd.api+json'}));
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 // app.use(express.static(process.cwd() + '/public'));
 app.use(express.static('public'));
 
@@ -87,77 +88,104 @@ app.use(express.static('public'));
 // =============================================================
 
 // Basic route that sends the user first to the AJAX Page
-app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname, 'index.html'));
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, 'index.html'));
 })
 
-app.get('/about', function(req, res){
-  res.sendFile(path.join(__dirname, 'about.html'));
+app.get('/about', function(req, res) {
+    res.sendFile(path.join(__dirname, 'about.html'));
 })
 
-app.get('/contact', function(req, res){
-  res.sendFile(path.join(__dirname, 'contact.html'));
-})
+app.get('/contact', function(req, res) {
+res.sendFile(path.join(__dirname, 'contact.html'));
+// var mailOpts, smtpTrans;
+// //Setup Nodemailer transport, I chose gmail. Create an application-specific password to avoid problems.
+// smtpTrans = nodemailer.createTransport('SMTP', {
+//     service: 'Gmail',
+//     auth: {
+//         user: "kristinjgumbert@gmail.com",
+//         pass: "application-specific-password"
+//     }
+// });
+// //Mail options
+// mailOpts = {
+//     from: req.body.name + ' &lt;' + req.body.email + '&gt;', //grab form data from the request body object
+//     to: 'kristinjgumbert@gmail.com',
+//     subject: 'Website contact form',
+//     text: req.body.message
+// }
+// smtpTrans.sendMail(mailOpts, function(error, response) {
+//     //Email not sent
+//     if (error) {
+//         res.render('contact', { title: 'Raging Flame Laboratory - Contact', msg: 'Error occured, message not sent.', err: true, page: 'contact' })
+//     }
+//     //Yay!! Email sent
+//     else {
+//         res.render('contact', { title: 'Raging Flame Laboratory - Contact', msg: 'Message sent! Thank you.', err: false, page: 'contact' })
+//     }
+});
+// });
+// })
 
 // blog posts
-app.get('/2016/5/26/edible_six_pack_rings', function(req, res){
-  res.sendFile(path.join(__dirname, '052616_edible_6pack_rings.html'));
+app.get('/2016/5/26/edible_six_pack_rings', function(req, res) {
+    res.sendFile(path.join(__dirname, '052616_edible_6pack_rings.html'));
 })
 
-app.get('/2016/6/2/best_summer_brews', function(req, res){
-  res.sendFile(path.join(__dirname, '060216_best_summer_brews.html'));
+app.get('/2016/6/2/best_summer_brews', function(req, res) {
+    res.sendFile(path.join(__dirname, '060216_best_summer_brews.html'));
 })
 
-app.get('/2016/6/3/nyc_craft_beer_fest', function(req, res){
-  res.sendFile(path.join(__dirname, '060316_nyc_craft_beer_fest.html'));
+app.get('/2016/6/3/nyc_craft_beer_fest', function(req, res) {
+    res.sendFile(path.join(__dirname, '060316_nyc_craft_beer_fest.html'));
 })
 
-app.get('/2016/6/9/new_jersey_beach_bars', function(req, res){
-  res.sendFile(path.join(__dirname, '060916_jersey_beach_bars.html'));
+app.get('/2016/6/9/new_jersey_beach_bars', function(req, res) {
+    res.sendFile(path.join(__dirname, '060916_jersey_beach_bars.html'));
 })
 
-app.get('/2016/6/9/weekend_vineyards', function(req, res){
-  res.sendFile(path.join(__dirname, '060916_weekend_vineyards.html'));
+app.get('/2016/6/9/weekend_vineyards', function(req, res) {
+    res.sendFile(path.join(__dirname, '060916_weekend_vineyards.html'));
 })
 
-app.get('/2016/6/13/asbury_biergarten', function(req, res){
-  res.sendFile(path.join(__dirname, '061316_asbury_biergarten.html'));
+app.get('/2016/6/13/asbury_biergarten', function(req, res) {
+    res.sendFile(path.join(__dirname, '061316_asbury_biergarten.html'));
 })
 
-app.get('/2016/6/15/poses_n_pints', function(req, res){
-  res.sendFile(path.join(__dirname, '061516_poses_n_pints.html'));
+app.get('/2016/6/15/poses_n_pints', function(req, res) {
+    res.sendFile(path.join(__dirname, '061516_poses_n_pints.html'));
 })
 
-app.get('/2016/6/17/drinks_for_dad', function(req, res){
-  res.sendFile(path.join(__dirname, '061716_drinks_for_dad.html'));
+app.get('/2016/6/17/drinks_for_dad', function(req, res) {
+    res.sendFile(path.join(__dirname, '061716_drinks_for_dad.html'));
 })
 
-app.get('/2016/6/29/pudding_shots', function(req, res){
-  res.sendFile(path.join(__dirname, '062916_pudding_shots.html'));
+app.get('/2016/6/29/pudding_shots', function(req, res) {
+    res.sendFile(path.join(__dirname, '062916_pudding_shots.html'));
 })
 
-app.get('/2016/6/29/summer_beer_games', function(req, res){
-  res.sendFile(path.join(__dirname, '062916_summer_beer_games.html'));
+app.get('/2016/6/29/summer_beer_games', function(req, res) {
+    res.sendFile(path.join(__dirname, '062916_summer_beer_games.html'));
 })
 
-app.get('/2016/6/30/american_punch', function(req, res){
-  res.sendFile(path.join(__dirname, '063016_american_punch.html'));
+app.get('/2016/6/30/american_punch', function(req, res) {
+    res.sendFile(path.join(__dirname, '063016_american_punch.html'));
 })
 
-app.get('/2016/7/5/cypress_brewing', function(req, res){
-  res.sendFile(path.join(__dirname, '070516_cypress_brewing.html'));
+app.get('/2016/7/5/cypress_brewing', function(req, res) {
+    res.sendFile(path.join(__dirname, '070516_cypress_brewing.html'));
 })
 
-app.get('/2016/7/14/margaritas_on_my_mind', function(req, res){
-  res.sendFile(path.join(__dirname, '071416_margaritas_on_my_mind.html'));
+app.get('/2016/7/14/margaritas_on_my_mind', function(req, res) {
+    res.sendFile(path.join(__dirname, '071416_margaritas_on_my_mind.html'));
 })
 
-app.get('/2016/8/2/hoppy_ipa_day', function(req, res){
-  res.sendFile(path.join(__dirname, '080216_hoppy_ipa_day.html'));
+app.get('/2016/8/2/hoppy_ipa_day', function(req, res) {
+    res.sendFile(path.join(__dirname, '080216_hoppy_ipa_day.html'));
 })
 
 // Starts the server to begin listening 
 // =============================================================
-app.listen(PORT, function(){
-  console.log('find me at port: ' + PORT);
+app.listen(PORT, function() {
+    console.log('find me at port: ' + PORT);
 })
