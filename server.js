@@ -107,6 +107,10 @@ app.get('/2016/8/2/hoppy_ipa_day', function(req, res) {
     res.render('080216_hoppy_ipa_day');
 })
 
+app.get('/2016/8/16/boozy_slushies', function(req, res) {
+    res.render('081616_boozy_slushies');
+})
+
 // Starts the server to begin listening 
 // =============================================================
 app.listen(PORT, function() {
